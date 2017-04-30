@@ -1,0 +1,38 @@
+% Anything on a line after a `%' gets ignored by TeX
+% Curly braces {, } are used for grouping
+
+\documentclass[11pt]{article}
+
+% This line requests non-standard packages (which you must make available)
+\usepackage{gb4e,qtree}
+
+\begin{document}
+\begin{center}
+{\large \bf Your title, large and bold. } \\   % use \\ to end centered lines
+{\large Your name (not bold). }
+\end{center}
+
+All your text goes down here.\footnote{Footnote text goes here}.
+
+Leaving a blank line starts a paragraph.  Otherwise newlines 
+are 
+ignored.  Plain text (not containing certain characters that 
+have special meaning to TeX) appears more or less as it is typed, 
+but lines are collected into paragraphs.
+
+\emph{italics,} {\bf bold,} {\large larger} or {\small smaller} type.
+
+Subscripts$_i$ and superscripts$^{i, j}$.
+
+\section{Linguistics-style examples}
+
+The commands in this section are defined by the packages
+\emph{gb4e} and \emph{qtree.}
+
+\begin{exe}
+\ex\label{rem1} Example.
+\ex \Tree [.S [.NP the dog ] \qroof{etc.}.VP ]
+\end{exe}
+
+You can refer to the example number (\ref{rem1}).
+\end{document}`

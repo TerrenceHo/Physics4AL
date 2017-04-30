@@ -1,0 +1,267 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  25 APR 2017 19:35
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**test.tex
+(./test.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/gb4e/gb4e.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/gb4e/cgloss4e.sty
+\lineone=\box26
+\linetwo=\box27
+\linethree=\box28
+\wordone=\box29
+\wordtwo=\box30
+\wordthree=\box31
+\gline=\box32
+\glossglue=\skip43
+)
+\c@fnx=\count87
+\@xnumdepth=\count88
+\c@xnumi=\count89
+\c@xnumii=\count90
+\c@xnumiii=\count91
+\c@xnumiv=\count92
+\c@exx=\count93
+\c@rxnumi=\count94
+\c@rxnumii=\count95
+\c@rxnumiii=\count96
+\c@rxnumiv=\count97
+\lcommentsep=\skip44
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/qtree/qtree.sty
+Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count98
+)
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+\pIIe@GRAPH=\toks14
+\@arclen=\dimen103
+\@arcrad=\dimen104
+\@tempdimd=\dimen105
+)
+\c@treecount=\count99
+\c@branchcount=\count100
+\parentbox=\box33
+\treebox=\box34
+\treeboxone=\box35
+\treeboxtwo=\box36
+\treeboxthree=\box37
+\treeboxfour=\box38
+\treeboxfive=\box39
+\treeboxsix=\box40
+\treeboxseven=\box41
+\treeboxeight=\box42
+\treeboxnine=\box43
+\treeboxten=\box44
+\treeboxeleven=\box45
+\treeboxtwelve=\box46
+\treeboxthirteen=\box47
+\treeboxfourteen=\box48
+\treeboxfifteen=\box49
+\treeboxsixteen=\box50
+\treeboxseventeen=\box51
+\treeboxeighteen=\box52
+\treeboxnineteen=\box53
+\treeboxtwenty=\box54
+\treeoffsetone=\skip45
+\treeoffsettwo=\skip46
+\treeoffsetthree=\skip47
+\treeoffsetfour=\skip48
+\treeoffsetfive=\skip49
+\treeoffsetsix=\skip50
+\treeoffsetseven=\skip51
+\treeoffseteight=\skip52
+\treeoffsetnine=\skip53
+\treeoffsetten=\skip54
+\treeoffseteleven=\skip55
+\treeoffsettwelve=\skip56
+\treeoffsetthirteen=\skip57
+\treeoffsetfourteen=\skip58
+\treeoffsetfifteen=\skip59
+\treeoffsetsixteen=\skip60
+\treeoffsetseventeen=\skip61
+\treeoffseteighteen=\skip62
+\treeoffsetnineteen=\skip63
+\treeoffsettwenty=\skip64
+\treeshiftone=\skip65
+\treeshifttwo=\skip66
+\treeshiftthree=\skip67
+\treeshiftfour=\skip68
+\treeshiftfive=\skip69
+\treeshiftsix=\skip70
+\treeshiftseven=\skip71
+\treeshifteight=\skip72
+\treeshiftnine=\skip73
+\treeshiftten=\skip74
+\treeshifteleven=\skip75
+\treeshifttwelve=\skip76
+\treeshiftthirteen=\skip77
+\treeshiftfourteen=\skip78
+\treeshiftfifteen=\skip79
+\treeshiftsixteen=\skip80
+\treeshiftseventeen=\skip81
+\treeshifteighteen=\skip82
+\treeshiftnineteen=\skip83
+\treeshifttwenty=\skip84
+\treewidthone=\skip85
+\treewidthtwo=\skip86
+\treewidththree=\skip87
+\treewidthfour=\skip88
+\treewidthfive=\skip89
+\treewidthsix=\skip90
+\treewidthseven=\skip91
+\treewidtheight=\skip92
+\treewidthnine=\skip93
+\treewidthten=\skip94
+\treewidtheleven=\skip95
+\treewidthtwelve=\skip96
+\treewidththirteen=\skip97
+\treewidthfourteen=\skip98
+\treewidthfifteen=\skip99
+\treewidthsixteen=\skip100
+\treewidthseventeen=\skip101
+\treewidtheighteen=\skip102
+\treewidthnineteen=\skip103
+\treewidthtwenty=\skip104
+\daughteroffsetone=\skip105
+\daughteroffsettwo=\skip106
+\daughteroffsetthree=\skip107
+\daughteroffsetfour=\skip108
+\branchwidthone=\skip109
+\branchwidthtwo=\skip110
+\branchwidththree=\skip111
+\branchwidthfour=\skip112
+\parentoffset=\skip113
+\treeoffset=\skip114
+\daughteroffset=\skip115
+\branchwidth=\skip116
+\parentwidth=\skip117
+\treewidth=\skip118
+\qta=\toks15
+\qtb=\toks16
+\nbranches=\count101
+\qroofx=\count102
+\qroofy=\count103
+\@qrscratchbox=\box55
+)
+No file test.aux.
+\openout1 = `test.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen106
+\scratchbox=\box56
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen107
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 15.
+
+
+LaTeX Warning: Reference `rem1' on page 1 undefined on input line 37.
+
+[1
+
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./test.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1474 strings out of 493014
+ 18273 string characters out of 6133351
+ 82971 words of memory out of 5000000
+ 5051 multiletter control sequences out of 15000+600000
+ 9379 words of font info for 33 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,20n,25p,235b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on test.pdf (1 page, 93366 bytes).
+PDF statistics:
+ 44 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
