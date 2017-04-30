@@ -1,8 +1,0 @@
-\select@language {english}
-\contentsline {section}{Derivation of Equation 2.1}{2}
-\contentsline {section}{Plots/Graphs}{2}
-\contentsline {section}{Data Tables}{2}
-\contentsline {section}{Conclusion}{3}
-\contentsline {section}{Extra Credit}{3}
-\contentsline {section}{Report}{3}
-\contentsline {section}{References}{4}
