@@ -32,6 +32,7 @@
 \setcounter{tocdepth}{5}
 \setcounter{secnumdepth}{5}
 
+
 %-------------------------------------------------------------------------------
 % HEADER & FOOTER
 %-------------------------------------------------------------------------------
@@ -107,37 +108,90 @@ terms of m/s$^2$}\]
 
 \section*{Data Tables}
 \addcontentsline{toc}{section}{Data Tables}
+\subsection*{Ball Drop Tables}
+Below are three tables
 
 \begin{table}[h]
     \centering
     \begin{tabular}{|c | c | c | c |}
     \hline
-    Trial & Photogate Spacing \(d\)(m) & Gap to impact Sensor \(D\)(m) & Measured Acceleration \(g\)(m/s$^2$) \\
+    Trial & Photogate Spacing \(d\)(cm) & Gap to impact Sensor \(D\)(cm) & Measured Acceleration \(g\)(m/s$^2$) \\
     \hline
-    1 & 0.080 $\pm$ 0.005 & .455 $\pm$ 0.005 & 10 $\pm$ \\
+    1 & 8.00 $\pm$ 0.05 & 45.50 $\pm$ 0.05 & 10.03 $\pm$ 0.02 \\
     \hline
-    2 & 0.080 $\pm$ 0.005 & .540 $\pm$ 0.005 & 10 $\pm$ \\
+    2 & 8.00 $\pm$ 0.05 & 54.00 $\pm$ 0.05 & 10.03 $\pm$ 0.03 \\
     \hline
-    3 & 0.080 $\pm$ 0.005 & .630 $\pm$ 0.005 & 10 $\pm$ \\
+    3 & 8.00 $\pm$ 0.05 & 63.00 $\pm$ 0.05 & 10.07 $\pm$ 0.03 \\
     \hline
-    4 & 0.080 $\pm$ 0.005 & .270 $\pm$ 0.005 & 10 $\pm$ \\
+    4 & 8.00 $\pm$ 0.05 & 27.00 $\pm$ 0.05 & 10.32 $\pm$ 0.01 \\
     \hline
-    5 & 0.080 $\pm$ 0.005 & .720 $\pm$ 0.005 & 10 $\pm$ \\
+    5 & 8.00 $\pm$ 0.05 & 72.00 $\pm$ 0.05 & 10.05 $\pm$ 0.03 \\
     \hline
     \end{tabular}
-    % \caption{Experiment Results and calculated acceleration values.}
+    \caption*{\textbf{Table 2.1 Experiment Results and calculated acceleration
+    values.} The calculated value of the acceleration due to gravity \(g\) is
+10.10 $\pm$ 0.02 m/s$^2$.  The systematic and statistical uncertainties are not
+the same. The following Tables 2.2 and 2.3 list out the contributions to
+uncertainty systematic and statistical uncertainty made.}
 \end{table}
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{| c | c | c |}
+    \begin{tabular}{| p{1cm} | p{4cm} | p{4cm} | p{5cm} |}
         \hline
-        Trial & Gap to impact sensor \(D\)(m) & Uncertainty in measured
-        acceleration \(g\)(m/s$^2$) \\
+        Trial & Photogate Spacing \(d\)(cm) & Gap to impact sensor \(D\)(cm) & 
+        Systematic Uncertainty in Measured Acceleration \(g\)(m/s$^2$) \\
         \hline
+        1 & 8.00 $\pm$ 0.05 & 45.50 $\pm$ 0.05 & $\pm$ 0.02 \\
+        \hline
+        2 & 8.00 $\pm$ 0.05 & 54.00 $\pm$ 0.05 & $\pm$ 0.02 \\
+        \hline
+        3 & 8.00 $\pm$ 0.05 & 63.00 $\pm$ 0.05 & $\pm$ 0.02 \\
+        \hline
+        4 & 8.00 $\pm$ 0.05 & 27.00 $\pm$ 0.05 & $\pm$ 0.01 \\
+        \hline
+        5 & 8.00 $\pm$ 0.05 & 72.00 $\pm$ 0.05 & $\pm$ 0.02 \\
+        \hline 
     \end{tabular}
-    % \caption{Second Table}
+    \caption*{\textbf{Table 2.2 Uncertainty due to Systematic Uncertainty} This
+    table depicts the uncertainty that resulted from systematic variables.
+Uncertainty due to measurement in distances \(d\) and \(D\) was 0.05 cm, or
+0.0005 m, because milimeters are the smallest unit on a meter stick.  
+The best values for T$_1$ and T$_2$ were used along with the upper and lower
+limits of d and D to calculate g$_{min}$ and g$_{max}$. \linebreak 
+Upper limits for measured distances: \(d = d_{best} + \delta d\) and \(D = D_{best} + \delta D\) 
+
+Lower limits for measured distances: \(d = d_{best} - \delta d\) and \(D = D_{best} - \delta D\)
+} 
 \end{table}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{| p{1cm} | p{4cm} | p{4cm} | p{5cm} |}
+        \hline
+        Trial & Photogate Spacing \(d\)(cm) & Gap to impact sensor \(D\)(cm) & 
+        Statistical Uncertainty in Measured Acceleration \(g\)(m/s$^2$) \\
+        \hline
+        1 & 8.00 $\pm$ 0.05 & 45.50 $\pm$ 0.05 & $\pm$ 0.003 \\
+        \hline
+        2 & 8.00 $\pm$ 0.05 & 54.00 $\pm$ 0.05 & $\pm$ 0.01 \\
+        \hline
+        3 & 8.00 $\pm$ 0.05 & 63.00 $\pm$ 0.05 & $\pm$ 0.01 \\
+        \hline
+        4 & 8.00 $\pm$ 0.05 & 27.00 $\pm$ 0.05 & $\pm$ 0.003 \\
+        \hline
+        5 & 8.00 $\pm$ 0.05 & 72.00 $\pm$ 0.05 & $\pm$ 0.01 \\
+        \hline 
+    \end{tabular}
+    \caption*{\textbf{Table 2.3 Uncertainty due to Statistical Uncertainty}
+    Using the standard deviation equaiton on STDEV on Excel, the uncertainties
+were calculated by dividing the standard deviations by the square root N number
+of data points.
+\[\delta g = \frac{1}{\sqrt{N}} * \sqrt{\frac{1}{N-1} * \sum\limits_{i=1}^{N} \big(x_i
+- \bar{x} \big)^2}\] } 
+     
+\end{table}
+
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
