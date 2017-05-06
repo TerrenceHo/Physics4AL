@@ -129,8 +129,8 @@ X Y
 \caption{\textbf{Figure 2.1  Graph of measured distance between second photogate and
 impact sensor.} The dots on the graph depict acceleration \(g\) for heights .455 m, .54
 m, .63 m, .27 m, and .72 m.  The best fit line for this equation has the line
-\(g = -0.53D + 10.38\), where \(g\) is acceleration due to gravity and \(D\) is
-height of fall.}
+\(g = -0.53D + 10.38\), where \(g\) is acceleration due to gravity in m/s$^2$ and \(D\) is
+height of fall in m.}
 \end{figure}
 For the ball drop experiment, 
 I do not expect that \(g\) should depend on \(D\), because acceleration due to
@@ -147,15 +147,14 @@ We can see in \textbf{Figure 2.2} on the next page that without the acceleration
 for height 0.27m, the trendline for gravity is nearly flat and constant.
 
 \setlength{\parindent}{5ex}
-\textbf{Figure 2.3} on the next page shows four quadratic trendlines of position vs time of a
+\textbf{Figure 2.3} on page four shows four quadratic trendlines of position vs time of a
 photocomb dropping through a photogate. Trial 3 was saved for a scientific plot
 at the end. Accelerations and uncertanties of these trials are shown in 
-\textbf{Table 2.3}.  The length of the comb was measured to be 30.5 cm, and we 
+\textbf{Table 2.3}.  The length of the comb, used for the experiment was measured to be 30.5 cm, and we 
 found length $\lambda$ of each hole segment by dividing the total length by the 
-number of holes, which was 35. Because of this method of calculating $\lambda$, 
-our calculations of \(g\) included both systematic and statistical 
-uncertainties, which are explained later in \textbf{Table 2.3}. The height of which 
-the photocomb was dropped from is 85 cm.
+number of holes, which was 35. The height of which the photocomb was dropped from is 85 cm.  
+Because of this method of calculating $\lambda$, our calculations of \(g\) included both systematic and statistical 
+uncertainties, which are explained later in \textbf{Table 2.3}. 
 
 \begin{figure}[h!]
 \begin{tikzpicture}
@@ -185,8 +184,8 @@ the photocomb was dropped from is 85 cm.
 \caption{\textbf{Figure 2.2  Second graph of measured distance between second photogate and
 impact sensor.} The dots on the graph depict acceleration \(g\) for heights .455 m, .54
 m, .63 m, and .72 m.  We disregard the acceleration measured for height 0.27m.  
-The best fit line for this equation has the line
-\(g = 0.11D + 9.98\).}
+The best fit line for this equation has the line \(g = 0.11D + 9.98\), where
+\(g\) is acceleration due to gravity in m/s$^2$ and \(D\) is height of fall in m.}
 \end{figure}
 
 \begin{figure}[h!]
@@ -353,9 +352,10 @@ uncertainty.
     \end{tabular}
 \end{center}
 \captionof*{table}{\textbf{Table 2.3 Acceleration Values From Photocomb Drop}
-The photocomb was dropped from a height of 0.85 m, and the length of the comb was
-measured to be 0.305 m. With 35 holes in the comb, each $\lambda$ was calculated
-to be 0.0087 m, where $\lambda$ is the length of each hole in the photocomb.}
+A 0.305 m photocomb was dropped from a height of 0.85 m. 
+With 35 holes in the comb, a length $\lambda$ of each hole in the photocomb 
+was calculated to be 0.0087 m.  The average values of acceleration were 9.8
+$\pm$ 0.38 m/s$^2$. } 
 
 \setlength{\parindent}{5ex}
 Because we calculated $\lambda$ by dividing by the length of the comb by the
@@ -416,6 +416,13 @@ would increase the accuracy of our calculations. However, for the photocomb
 calculations, only the statistical uncertainties were used, because the 
 systematic uncertainties were 10 times smaller than the statistical uncertainties.  
 
+It is interesting to note that in both experiments, statistical uncertainty
+dominated systematic uncertainty, for the photocomb experiment systematic
+uncertainty being irrelevant.  We can conclude that our uncertainty comes mainly
+for randomness in the measuring devices we use for experiments, rather than
+hand-held measurements (i.e. ruler).  To eliminate this uncertainty, we must
+conduct many more trials for the uncertainty to average out.
+
 We notice that all the accelerations calculated from the ball drop were greater
 than 9.8 m/s$^2$, and so we can conclude that when the experiment was being
 conducted, the ball was given a slight push when it was dropped through the
@@ -433,41 +440,50 @@ initial velocity when dropping the ball.
     to the quadratic curve \(y = ax^2 + bx + c\), which shows that distance the 
     photocomb falls per second increases as time and that it is accelerating.  
     The fit line is \(y = (4.6 \pm 0.3)x^2 - (9.9 \pm 0.8)x + (5.3 \pm 0.5)\), 
-    where y stands for distance fallen and x stands for time passed. The curves
+    where y stands for distance fallen in meters and x stands for time passed in
+    seconds. The curves
 of the graph have been extended slightly to show that the fit line is indeed a
 parabola, which supports our decision to fit this data to a quadratic equation.}
 \end{figure}
 
-\textbf{Figure 2.4} above depicts the position of a photocomb dropped from
+\textbf{Figure 2.4} on the next page depicts the position of a photocomb dropped from
 rest and accelerated by gravity over time.  By fitting the quadratic equation 
 to our position vs time graph, we can find the value of the photocomb's 
 acceleration due to gravity \(g\). Because the slope of the position vs time
 graph is not constant but instead increasing, we determine that the photocomb is
 speeding up and accelerating positively.  Because acceleration is position 
 differentiated twice, we can see the value of \(g\) in this fit line is 
-(9.8 $\pm$ 0.6)m/s$^2$, or twice the value of the constant before the x$^2$.  
+(9.2 $\pm$ 0.6)m/s$^2$, or twice the value of the constant before the x$^2$.  
 
-The uncertainty of this calculated value comes wholly from statistical uncertainty. Systematic
-uncertainty would stem from differences in measurements, and turned out to be 10
-times smaller than statistical uncertainty.  The length of the photocomb used in
-this experiment was measured to be 30.5 cm.  The uncertainty of the ruler was
-0.05 cm, or half the smallest measurement unit, which was a millimeter.
+We conducted the experiment by dropping a 30.5 cm photocomb through a photogate.
+There were 35 gaps in the photocomb, and so the length $\lambda$ of each gap was
+0.87 cm, which was found by dividing the number of gaps by the length of the
+photocomb. The uncertainty of the ruler was 0.05 cm, or half the smallest 
+measurement unit, which was a millimeter. 
+
+Using these measurements, we can calcualte the uncertainties of our experiment.  
 Systematic uncertainty was calculated by taking the upper and lower bounds of
 the measured length of the photocomb and finding \(g\) for those values,
 subtracting \(g\)$_{max}$ and \(g\)$_{min}$ and dividing by two. Statistical
 uncertainty was calculated using Excel's quadratic regression analysis.  
+The uncertainty of this calculated value comes wholly from statistical
+uncertainty, because systematic uncertainty turned out to be 10 times 
+smaller than statistical uncertainty and was too small to be used. 
     
-Our calculated value of \(g\) is very accurate.  The real value of
-\(g\) is accepted to be 9.80 m/s$^2$, which matches our calculated value of
-\(g\).  However, the precision of our calculation has a large range, from 
-10.4 m/s$^2$ to 9.2 m/s$^2$.  Thus, our calculations are not precise.
+Our calculated value of \(g\) is partially accurate because the true value of
+\(g\) lies within its uncertainty range.  The precision of our calculation has a large range, from 
+9.8 m/s$^2$ to 8.6 m/s$^2$.  The real value of \(g\) is accepted to be 9.80 m/s$^2$, which matches our calculated value of
+\(g\)'s upper bound of uncertainty.  Our calculations are not precise, because
+the uncertainty's significant digit is in first decimal place, which leaves room
+for a large amount of error.  
 Future improvements of this experiment would focus on increasing the precision
-of the calculation and reducing the uncertainty range to less significant digits.  
-This could be achieved by using machines that could track more precise
-measurements and thus produce less statistical error, which accounts for most
-uncertainty and error.
+by reducing the uncertainty range to less significant
+digits and improving the accuracy so that g$_{best}$ matches more
+closely to the real value of \(g\).  This could be achieved by using machines that 
+could track more precise measurements and thus produce less statistical error, 
+which accounts for most uncertainty and error.
 
-Word count: 303
+Word count: 324 
 
 %-------------------------------------------------------------------------------
 % REFERENCES
