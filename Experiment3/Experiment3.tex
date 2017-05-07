@@ -78,6 +78,42 @@
 \section*{Discussion}
 \addcontentsline{toc}{section}{Discussion}
 
+We aligned the photocomb at the 36th tooth from the left.  We then
+correspondingly always pulled the glider to the left when performing our
+experiment.  
+
+Potential energy of a spring is given by the equation \(F = -kx\), where \(F\) is the force
+exert of the spring, \(k\) is the spring constant, and \(x\) is the distance pulled. 
+To obtain our potential energy calculations, we first obtained the spring constant 
+\(k\) by hanging a mass from the spring and measuring the distance stretched,
+shown in \textbf{Figure 3.1}.  \(k\) is found to be 6.016 $\pm$ 0.001 \(N/m\).
+
+To calculate both the kinetic and potential energy in space, block event times
+were measured using the DAQ.  Because we know that each tooth and gap between
+each tooth is 2 mm $\pm$ 30 $\mu$m, each block event time represented an
+increase in 4 mm.  The potential energy is calculated with the average distance
+$\bar{x}$ using the formula \(E_p(\bar{x}(i)) = \frac{1}{2}k\bar{x}^2\) and 
+calculated \(k\).  
+
+Velocity of the glider was calculated by differentiating displacement with respect to
+time using the equation \(v(\bar{x}(i)) = \frac{x_{i+1} - x_i}{t_{i+1} - t_i}\).
+Because kinetic energy \(E_k\) can be found by the formula \(E_k(\bar{x}(i)) =
+\frac{1}{2}mv(\bar{x}(i))^2\), when can substitute \(v(\bar{x}(i))\) and obtain
+kinetic energy with this final equation \(E_k(\bar{x}(i)) =
+\frac{1}{2}m(\frac{x_{i+1} - x_i}{t_{i+1} - t_i})^2\). 
+
+We then plotted \(E_k(\bar{x}(i))\), \(E_p(\bar{x}(i))\), and \(E_{total}\) on a
+plot with respect to average distance $\bar{x}$.  The potential energy is an
+upward facing parabola, while kinetic energy is a downward facing parabola.
+When the spring is pulled, potential energy is at it's maximum and kinetic
+energy is zero.  When the spring and glider system is released, potential energy
+is transformed into kinetic energy and the glider gains speed, until it reaches
+the equilibrium point where kinetic energy is maximized.  After, kinetic energy
+is transformed once again into potential energy as the spring pulls on the
+glider.  Other than a slight loss of energy to friction (shown in \textbf{Figure
+3.2}), the energy level of the system remained the same.  Energy was only being
+transferred between potential and kinetic energy as the glider moved.
+
 \section*{Plots and Tables}
 \addcontentsline{toc}{section}{Plots and Tables}
 \addcontentsline{toc}{subsection}{Table 3.1}
@@ -100,7 +136,7 @@ Mass of Glider with Photogate Comb = 0.225 $\pm$ 0.0005 kg
         \hline
     \end{tabular}
 \end{center}
-
+\captionof*{table}{\textbf{Table 3.1 Force exerted on spring vs displacement.}}
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{SpringForce.png}
     \captionsetup{labelformat=empty}
@@ -108,9 +144,12 @@ Mass of Glider with Photogate Comb = 0.225 $\pm$ 0.0005 kg
     applied by hanging mass and displacement.} The spring constant found in this
 case is \(k = 6.016 \pm 0.002\) in N/m.}
 \end{figure}
+\addcontentsline{toc}{subsection}{Figure 3.1}
 
-\section*{Extra Credit}
-\addcontentsline{toc}{section}{Extra Credit}
+
+
+% \section*{Extra Credit}
+% \addcontentsline{toc}{section}{Extra Credit}
 
 \section*{Report}
 \addcontentsline{toc}{section}{Report}
