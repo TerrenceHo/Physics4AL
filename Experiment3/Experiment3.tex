@@ -38,7 +38,7 @@
 \fancyhf{}
 \setlength\headheight{15pt}
 \fancyhead[L]{Terrence Ho}
-\fancyhead[R]{Experiment 1}
+\fancyhead[R]{Experiment 3}
 \fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
 %-------------------------------------------------------------------------------
 % TITLE PAGE
@@ -83,7 +83,7 @@ correspondingly always pulled the glider to the left when performing our
 experiment.  
 
 Potential energy of a spring is given by the equation \(F = -kx\), where \(F\) is the force
-exert of the spring, \(k\) is the spring constant, and \(x\) is the distance pulled. 
+exerted on the spring, \(k\) is the spring constant, and \(x\) is the distance pulled. 
 To obtain our potential energy calculations, we first obtained the spring constant 
 \(k\) by hanging a mass from the spring and measuring the distance stretched,
 shown in \textbf{Figure 3.1}.  \(k\) is found to be 6.016 $\pm$ 0.001 \(N/m\).
@@ -100,9 +100,10 @@ time using the equation \(v(\bar{x}(i)) = \frac{x_{i+1} - x_i}{t_{i+1} - t_i}\).
 Because kinetic energy \(E_k\) can be found by the formula \(E_k(\bar{x}(i)) =
 \frac{1}{2}mv(\bar{x}(i))^2\), when can substitute \(v(\bar{x}(i))\) and obtain
 kinetic energy with this final equation \(E_k(\bar{x}(i)) =
-\frac{1}{2}m(\frac{x_{i+1} - x_i}{t_{i+1} - t_i})^2\). 
+\frac{1}{2}m\Bigg(\frac{x_{i+1} - x_i}{t_{i+1} - t_i}\Bigg)^2\). 
 
-We then plotted \(E_k(\bar{x}(i))\), \(E_p(\bar{x}(i))\), and \(E_{total}\) on a
+We then plotted \(E_k(\bar{x}(i))\), \(E_p(\bar{x}(i))\), and
+\(E_{total}(\bar{x}(i))\) on a
 plot with respect to average distance $\bar{x}$.  The potential energy is an
 upward facing parabola, while kinetic energy is a downward facing parabola.
 When the spring is pulled, potential energy is at it's maximum and kinetic
@@ -116,7 +117,6 @@ transferred between potential and kinetic energy as the glider moved.
 
 \section*{Plots and Tables}
 \addcontentsline{toc}{section}{Plots and Tables}
-\addcontentsline{toc}{subsection}{Table 3.1}
 Mass of Glider with Photogate Comb = 0.225 $\pm$ 0.0005 kg
 
 \begin{center}
@@ -136,16 +136,16 @@ Mass of Glider with Photogate Comb = 0.225 $\pm$ 0.0005 kg
         \hline
     \end{tabular}
 \end{center}
-\captionof*{table}{\textbf{Table 3.1 Force exerted on spring vs displacement.}}
+\captionof*{table}{\textbf{Table 3.1 Force exerted on spring vs displacement.}
+9.8 m/s$^2$ was as the acceleration due to gravity to calculate applied force.}
 
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{SpringForce.png}
     \captionsetup{labelformat=empty}
     \caption{\textbf{Figure 3.1 Measuring Spring Constant by comparing force
     applied by hanging mass and displacement.} The spring constant found in this
-case is \(k = 6.016 \pm 0.002\) in N/m.}
+case is \(k = (6.016 \pm 0.002)\) in N/m.}
 \end{figure}
-\addcontentsline{toc}{subsection}{Figure 3.1}
 
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{Energy.png}
@@ -164,9 +164,9 @@ force that opposes the motion of the glider. Friction is equal to the
 coefficient of friction times the normal force, or \(F_{friction} = \mu
 * N\), where \(N\) is the normal force due to gravity.  The normal force is
 equal to the weight of the glider, which has a mass of 0.225 kg.  The normal
-force \(N\) of the glider is equal to \((0.225 \pm 0.005)\) kg * 9.8 m/s = \((2.205
-\pm 0.05)\) m/s$^2$.  Having found the normal force, we can find the coefficient
-of friction, where \(\mu = \frac{F_{friction}}{N} = 0.0004 \pm uncertainty\).
+force \(N\) of the glider is equal to \((0.225 \pm 0.0005)\) kg * 9.8 m/s = \((2.205
+\pm 0.005)\) m/s$^2$.  Having found the normal force, we can find the coefficient
+of friction, where \(\mu = \frac{F_{friction}}{N} = 0.0004 \pm 0.0002\).
 
 
 Because the value of $\mu$ is very small, We can see that we the energy lost 
