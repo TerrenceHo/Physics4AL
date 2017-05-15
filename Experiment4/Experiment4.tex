@@ -81,14 +81,14 @@
 \addcontentsline{toc}{subsection}{Measured Values}
 
 The mass of the glider used in the experiment was 203 $\pm$ 0.5 g.  The length
-of the flag 38 $\pm$ 0.5 mm.  CHECK!  
+of the flag 38 $\pm$ 0.5 mm.  
 
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{TensionVoltage.png}
     \captionsetup{labelformat=empty}
     \caption{\textbf{Figure 4.1  Voltage due to applied Tension.} The best fit
-    line has the equation \(T = (-6.28 \pm 0.01)V + (0.023 \pm 0.002)\).  The
-slope of the best fit line is the calibration constant: -6.28 $\pm$ 0.01 N/V.}
+    line has the equation \(T = (-6.283 \pm 0.004)V + (0.023 \pm 0.002)\).  The
+slope of the best fit line is the calibration constant: -6.283 $\pm$ 0.004 N/V.}
 \addcontentsline{toc}{subsection}{Figure 4.1}
 \end{figure}
 
@@ -98,34 +98,45 @@ slope of the best fit line is the calibration constant: -6.28 $\pm$ 0.01 N/V.}
         \hline
         Trial & Initial Velocity (m/s) & Final Velocity (m/s) \\
         \hline
-        1 & -0.207980 $\pm$ & 0.082125 \\
+        1 & -0.1779 $\pm$ 0.0005 & 0.0821 $\pm$ 0.0005 \\
         \hline
-        2 & -0.171560 $\pm$ & 0.077422 \\
+        2 & -0.1415 $\pm$ 0.0005 & 0.0774 $\pm$ 0.0005 \\
         \hline
     \end{tabular}
 \end{center}
 \captionof*{table}{\textbf{Table 4.1} Initial and final velocities recorded by
-the photogate for two trials.}
+the photogate for two trials.  Velocity heading towards the force sensor was
+considered negative, and velocity directed away was positive.}
 
 \subsection*{Impulse Calculation - Method 1}
 \addcontentsline{toc}{subsection}{Impulse Calculation - Method 1}
 Momentum, given by \(P\), is the product of mass \(m\) and velocity \(v\), or
 \(P = mv\).  The change in momentum is known as impulse, or \(\Delta P = P_f -
-P_i = m(v_f - v_i)\).  Using this formula and the mass of the glider, for trial
-one, the impulse $\Delta P_1$ = $\pm$ .  For trial two, the impulse $\Delta P_2$
-= $\pm$ .
+P_i = m(v_f - v_i)\).  Using this formula, the velocities given in \textbf{Table
+4.1}, and the mass of the glider, for Trial
+one, the impulse $\Delta P_1$ = 0.0528 $\pm$ 0.0005 kg$\cdot$m/s.  For Trial
+two, the impulse $\Delta P_2$ = 0.0408 $\pm$ 0.0005 kg$\cdot$m/s.
 
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{ForceTime1.png}
     \captionsetup{labelformat=empty}
-    \caption{\textbf{Figure 4.2}}
+    \caption{\textbf{Figure 4.2 Trial 1 of force of moving glider against time.}
+    This glider moved at a faster velocity than Trial 2.  The data points
+represent the force sensor readings in Newtons at a specific time interval, before and
+after the collision with the force sensor represented by the peak in data.  The area under the curve
+of the peak represents the impulse of the collision.}
 \addcontentsline{toc}{subsection}{Figure 4.2}
 \end{figure}
 
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{ForceTime2.png}
     \captionsetup{labelformat=empty}
-    \caption{\textbf{Figure 4.3}}
+    \caption{\textbf{Figure 4.3 Trial 2 of force of moving glider against time.}
+    This glider moved at a slower velocity compared to Trial 1. The data points
+represent the force sensor readings in Newtons at a specific time interval,
+before and after the collision with the force sensor represented by the peak in
+data.  The area under the curve of the peak represeents the impulse of the
+collision.}
 \addcontentsline{toc}{subsection}{Figure 4.3}
 \end{figure}
 
@@ -141,22 +152,36 @@ $t_{i+1}$.  For our numerical integration, $\Delta t$ was 0.0005 s, and \(\bar{F
 
 To obtain our impulse calculations, we multipled the voltage read by the force
 sensor by our calibration coefficient found previously in \textbf{Figure 4.1},
-then subtracted the average background noise of the force sensor.  Finding the
-range where the force detected went above zero (to signify the cart hitting the
-force sensor), we calculated the area under the curve with the formula involving
-Riemann sums derived previously.  For Trial 1, \(\Delta P_1 = \pm \), and for
-Trial 2, \(\Delta P_2 = \pm \).  The fractional uncertainty for the impulse is
-the same as the fractional uncertainty of the coefficient calibration.
+then subtracted the average background noise of the force sensor.  To calculate
+our numerical integration, we needed to Find the range where the force detected 
+went above zero on both \textbf{Figures 4.2} and \textbf{4.3} (to signify the cart hitting the
+force sensor). We the calculated the area under the curve with the formula involving
+Riemann sums derived previously.  For Trial 1, \(\Delta P_1 = 0.04509 \pm
+0.00003\) kg$\cdot$m/s, and for Trial 2, \(\Delta P_2 = 0.03701 \pm 0.00002\) kg$\cdot$m/s.  
+The fractional uncertainty for the impulse is the same as the fractional 
+uncertainty of the coefficient calibration.
 
 \addcontentsline{toc}{subsection}{Table 4.2}
 \begin{center}
     \begin{tabular}{| c | c | c |}
         \hline
-        Trial & Impulse (Method 1 Change in Momentum) (Ns) & Impulse (Riemann Sums) (Ns) \\
+        Trial & Impulse (Method 1 Change in Momentum) (kg$\cdot$m/s) & Impulse
+        (Riemann Sums) (kg$\cdot$m/s) \\
+        \hline
+        1 & 0.0528 $\pm$ 0.0005 & 0.04509 $\pm$ 0.00003 \\
+        \hline
+        2 & 0.0408 $\pm$ 0.0005 & 0.03701 $\pm$ 0.00002 \\
         \hline
     \end{tabular}
 \end{center}
-\captionof*{table}{\textbf{Table 4.2}}
+\captionof*{table}{\textbf{Table 4.2} Results for both trials and methods of
+impulse calculation.}
+
+We can see that calculating the impulse in different ways yields slightly
+different results.  We can attribute this error to the "ringing" of the force
+sensor after it was struck by the cart, which would cause error in the Reimann
+sum calculation since impulse is still being exerted after it dipped back down
+to zero.
 
 \section*{Extra Credit}
 \addcontentsline{toc}{section}{Extra Credit}
@@ -164,6 +189,24 @@ the same as the fractional uncertainty of the coefficient calibration.
 \section*{Presentation}
 \addcontentsline{toc}{section}{Presentation}
 
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+Our experiment sought to prove that while energy is lost in collisions due to
+friction, change in momentum, or impulse, is constant.  Impulse is defined to be
+the amount of force acting over a certain time period.  Because impulse is also the
+change in an object's momentum, we can also measure it that way.  If both these
+ways of calculating impulse were equal, then we would have proved that impulse
+is constant during a collision.  A glider with a flag on top was set up on an
+air track with a force sensor at the end of a track and a photogate to track the
+flag's movement.  The collision with the force sensor was monitored with the
+photogate, and the velocities obtained by the photogate allowed us to calculate
+impulse by change in momentum.  Force over time was measured with the force
+sensor, and impulse was calculated by summing the force in the time interval of
+the collision.  The two values obtained were compared to verify that the results
+were close but outside the margin of error.
+
+\subsection*{Methods}
+\addcontentsline{toc}{subsection}{Methods}
 \end{document}
 
 
