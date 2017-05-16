@@ -185,6 +185,17 @@ to zero.
 
 \section*{Extra Credit}
 \addcontentsline{toc}{section}{Extra Credit}
+We tested two glider-to-glider collisions, one involving two bumpers and one
+without bumpers at all.  For the bumper collision, the coefficient of
+restitution was 0.3659, the initial energy was 0.0341 J, and the final energy
+was 0.0046 J.  For the no-bumper collision, the COR was 0.5794, the initial
+energy was 0.0584 J, and the final energy was 0.0198 J.  For the bumper
+collision, the coefficient of restitution was lower, and the energy loss was
+high, because only around 13\% of the energy remained after the collision.
+Compared to the no bumper collision, which had 34\% of the remaining energy,  
+the energy loss was greater for the bumper collision.  Thus we can conclude with
+a higher coefficient of restitution that the energy loss is less, because the
+collision is closer to being an elastic collision.
 
 \section*{Presentation}
 \addcontentsline{toc}{section}{Presentation}
@@ -207,6 +218,61 @@ were close but outside the margin of error.
 
 \subsection*{Methods}
 \addcontentsline{toc}{subsection}{Methods}
+\begin{figure}[h!]
+    \includegraphics[width=\linewidth]{Figure44.png}
+    \captionsetup{labelformat=empty}
+    \caption{\textbf{Figure 4.4 Equipment for measuring the impulse of a glider
+        colliding with force sensor.}
+    The force sensor measures \(F(t)\) in volts, which allows you to gain an
+independent measure of impulse by numerical integration.  The flag passes
+through the photogate before and after the collision, which allows a different
+way to measure initial and final momentum. Figure reproduced (with permission)
+from Fig. 4.1 by Campbell, W. C. et al.$^1$}
+\addcontentsline{toc}{subsection}{Figure 4.4}
+\end{figure}
+
+\textbf{Figure 4.4} shows the layout of our equipment used to conduct the
+experiment.  The first step of our experiment was to calibrate the force sensor.
+We connected it to the PASCO machine and shifted the force sensor so that it faced downwards, and hung masses of
+various weights onto the hook to measure the voltage readings.  The masses we
+used were 0.2 kg, 0.1 kg, 0.06 kg, 0.036 kg, and 0.019 kg. We graphed the
+voltages measured to obtain the force sensor's calibration coefficient, which
+will be used to convert the voltages measured later to volts.
+
+\setlength{\parindent}{5ex}
+The mass of the glider with the flag was measured with a scale, and the length of the flag was
+measured with a ruler.  Our equipment was set up in the same fashion as
+\textbf{Figure 4.4}.  We connected the photogate and force sensor to the PASCO,
+so the computer could record the velocity, time, and voltage of the force
+sensor.  A preconfigured timer was chosen for the photogate, where speed was
+chosen as the variable measured.  The length of the flag was typed in, so the
+photogate knew how long the flag was and when to measure speed.  We kept the
+same calibrations as before for the force sensor, but set the sample rate to
+2kHz.  We turned on the glider and slid the glider on the track twice towards
+the force sensor.  We gave the glider less speed for the second trial compared
+to the first trial.  Time of the trial, speed of the glider, and the voltage
+were measured for each trial, and copied over to an Excel spreadsheet for
+analysis.  
+
+To improve the accuracy of our experiment, we employed a few methods to
+eliminate systematic errors.  The glider was put on an air track to reduce the
+energy lost to friction.  The air track was set to be completely level, so that
+the glider did not experience any acceleration due to gravity.  The average
+background force detected by the force sensor was calculated and removed from
+our final analysis, to avoid any systematic error by the force sensor.  
+We also made sure to tare our force sensor before each trial, to ensure the 
+background force remains as low as possible.  
+
+
+
+
+\newpage
+\section*{References}
+\addcontentsline{toc}{section}{References}
+\begin{enumerate}
+    \item Campbell, W. C. et al. Physics 4AL: Mechanics Lab Manual (ver. April
+        3, 2017). (Univ. California Los Angeles, Los Angeles, California).
+\end{enumerate}
 \end{document}
 
 
