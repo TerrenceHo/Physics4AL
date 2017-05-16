@@ -120,22 +120,20 @@ two, the impulse $\Delta P_2$ = 0.0408 $\pm$ 0.0005 kg$\cdot$m/s.
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{ForceTime1.png}
     \captionsetup{labelformat=empty}
-    \caption{\textbf{Figure 4.2 Trial 1 of force of moving glider against time.}
+    \caption{\textbf{Figure 4.2, Trial 1 of force of a moving glider against time.}
     This glider moved at a faster velocity than Trial 2.  The data points
-represent the force sensor readings in Newtons at a specific time interval, before and
-after the collision with the force sensor represented by the peak in data.  The area under the curve
-of the peak represents the impulse of the collision.}
+represent the force sensor readings in Newtons at a specific time interval before and
+after the collision.  The area under the curve of the peak represents the impulse of the collision.}
 \addcontentsline{toc}{subsection}{Figure 4.2}
 \end{figure}
 
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{ForceTime2.png}
     \captionsetup{labelformat=empty}
-    \caption{\textbf{Figure 4.3 Trial 2 of force of moving glider against time.}
+    \caption{\textbf{Figure 4.3, Trial 2 of force of a moving glider against time.}
     This glider moved at a slower velocity compared to Trial 1. The data points
-represent the force sensor readings in Newtons at a specific time interval,
-before and after the collision with the force sensor represented by the peak in
-data.  The area under the curve of the peak represeents the impulse of the
+represent the force sensor readings in Newtons at a specific time interval before 
+and after the collision.  The area under the curve of the peak represeents the impulse of the
 collision.}
 \addcontentsline{toc}{subsection}{Figure 4.3}
 \end{figure}
@@ -147,13 +145,14 @@ be put into the form \(\Delta P = \int_{t_i}^{t_f} F(t)dt\).  We can approximate
 this impulse using Riemann sums, or \(\Delta P \approx \Delta t
 \sum_{i=1}^{n}\bar{F}(t_i)\), where $\Delta t$ is the time interval between each
 data point, and \(\bar{F}(t_i)\) is the average force between $t_i$ and
-$t_{i+1}$.  For our numerical integration, $\Delta t$ was 0.0005 s, and \(\bar{F}(t_i) =
+$t_{i+1}$.  For our numerical integration $\Delta t$ was 0.0005 s, and \(\bar{F}(t_i) =
 \frac{F(t_i) + F(t_{i+1})}{2}\).
 
+\setlength{\parindent}{5ex}
 To obtain our impulse calculations, we multipled the voltage read by the force
 sensor by our calibration coefficient found previously in \textbf{Figure 4.1},
 then subtracted the average background noise of the force sensor.  To calculate
-our numerical integration, we needed to Find the range where the force detected 
+our numerical integration, we needed to find the range where the force detected 
 went above zero on both \textbf{Figures 4.2} and \textbf{4.3} (to signify the cart hitting the
 force sensor). We the calculated the area under the curve with the formula involving
 Riemann sums derived previously.  For Trial 1, \(\Delta P_1 = 0.04509 \pm
@@ -165,8 +164,8 @@ uncertainty of the coefficient calibration.
 \begin{center}
     \begin{tabular}{| c | c | c |}
         \hline
-        Trial & Impulse (Method 1 Change in Momentum) (kg$\cdot$m/s) & Impulse
-        (Riemann Sums) (kg$\cdot$m/s) \\
+        Trial & Impulse by Change in Momentum (kg$\cdot$m/s) & Impulse
+        by Riemann Sums (kg$\cdot$m/s) \\
         \hline
         1 & 0.0528 $\pm$ 0.0005 & 0.04509 $\pm$ 0.00003 \\
         \hline
@@ -177,11 +176,11 @@ uncertainty of the coefficient calibration.
 \captionof*{table}{\textbf{Table 4.2} Results for both trials and methods of
 impulse calculation.}
 
-We can see that calculating the impulse in different ways yields slightly
-different results.  We can attribute this error to the "ringing" of the force
-sensor after it was struck by the cart, which would cause error in the Reimann
+We can see that calculating the impulse by Riemann Sums results in a lower
+calculated impulse. We can attribute this error to the "ringing" of the force
+sensor after it was struck by the cart, which would cause errors in the Reimann
 sum calculation since impulse is still being exerted after it dipped back down
-to zero.
+to zero in \textbf{Figures 4.2} and \textbf{4.3}.
 
 \section*{Extra Credit}
 \addcontentsline{toc}{section}{Extra Credit}
@@ -192,7 +191,7 @@ was 0.0046 J.  For the no-bumper collision, the COR was 0.5794, the initial
 energy was 0.0584 J, and the final energy was 0.0198 J.  For the bumper
 collision, the coefficient of restitution was lower, and the energy loss was
 high, because only around 13\% of the energy remained after the collision.
-Compared to the no bumper collision, which had 34\% of the remaining energy,  
+Compared to the no bumper collision, which had 34\% of the initial energy,  
 the energy loss was greater for the bumper collision.  Thus we can conclude with
 a higher coefficient of restitution that the energy loss is less, because the
 collision is closer to being an elastic collision.
@@ -202,11 +201,11 @@ collision is closer to being an elastic collision.
 
 \subsection*{Introduction}
 \addcontentsline{toc}{subsection}{Introduction}
-Our experiment sought to prove that while energy is lost in collisions due to
-friction, change in momentum, or impulse, is constant.  Impulse is defined to be
-the amount of force acting over a certain time period.  Because impulse is also the
-change in an object's momentum, we can also measure it that way.  If both these
-ways of calculating impulse were equal, then we would have proved that impulse
+Our experiment sought to prove that while energy is lost in inelastic collisions due to
+friction, change in momentum, or impulse, is constant.  Impulse can be defined
+in two different ways, by the amount of force acting over a certain time period,
+or the change in momentum.
+If both these ways of calculating impulse were equal, then we would have proved that impulse
 is constant during a collision.  A glider with a flag on top was set up on an
 air track with a force sensor at the end of a track and a photogate to track the
 flag's movement.  The collision with the force sensor was monitored with the
@@ -231,28 +230,47 @@ from Fig. 4.1 by Campbell, W. C. et al.$^1$}
 \addcontentsline{toc}{subsection}{Figure 4.4}
 \end{figure}
 
-\textbf{Figure 4.4} shows the layout of our equipment used to conduct the
-experiment.  The first step of our experiment was to calibrate the force sensor.
-We connected it to the PASCO machine and shifted the force sensor so that it faced downwards, and hung masses of
+The first step of our experiment was to calibrate the force sensor.
+We connected it to the PASCO machine and shifted the force sensor so that the
+hook faced downwards, and hung masses of
 various weights onto the hook to measure the voltage readings.  The masses we
 used were 0.2 kg, 0.1 kg, 0.06 kg, 0.036 kg, and 0.019 kg. We graphed the
-voltages measured to obtain the force sensor's calibration coefficient, which
-will be used to convert the voltages measured later to volts.
+voltages measured and compared it to the force exerted by gravity on the masses,
+to obtain the force sensor's calibration coefficient, which will be used to convert 
+the voltages measured later to volts.
 
 \setlength{\parindent}{5ex}
 The mass of the glider with the flag was measured with a scale, and the length of the flag was
-measured with a ruler.  Our equipment was set up in the same fashion as
+measured with a ruler.  The mass measurement will later be used to calculate
+momentum of the glider.  Our equipment was set up in the same fashion as
 \textbf{Figure 4.4}.  We connected the photogate and force sensor to the PASCO,
 so the computer could record the velocity, time, and voltage of the force
 sensor.  A preconfigured timer was chosen for the photogate, where speed was
 chosen as the variable measured.  The length of the flag was typed in, so the
 photogate knew how long the flag was and when to measure speed.  We kept the
 same calibrations as before for the force sensor, but set the sample rate to
-2kHz.  We turned on the glider and slid the glider on the track twice towards
-the force sensor.  We gave the glider less speed for the second trial compared
+2kHz.  The measurements were measured in Continuous Mode on the PASCO machine.
+
+We turned on the airtrack and slid the glider on the track twice towards
+the force sensor.  When the glider passed through the photogate, the photogate
+should record the speed of the glider twice, once before and after the glider
+hits the force sensor.  The force sensor should be measuring voltage the whole
+time during the trial, but should only see a spike in voltage when the glider
+connects with the force sensor.  In the end, you should end up with three
+columns of data, one for time, speed, and voltage.
+
+We gave the glider less speed for the second trial compared
 to the first trial.  Time of the trial, speed of the glider, and the voltage
 were measured for each trial, and copied over to an Excel spreadsheet for
 analysis.  
+
+For uncertainty values of the experiment, we used $\pm$ 0.5 mm for the flag length and
+$\pm$ 0.5 g for the mass of the glider, which are half the smallest precision of the
+measurement devices.  We set the PASCO to measure voltage of the force sensor
+within one digit of uncertainty (i.e. only the least significant digit measured
+was flickering on the display).  The velocities measured had the same fractional
+uncertainty as the calibration coefficient of the force sensor, which we can
+find with regressional analysis on Excel.
 
 To improve the accuracy of our experiment, we employed a few methods to
 eliminate systematic errors.  The glider was put on an air track to reduce the
