@@ -38,7 +38,7 @@
 \fancyhf{}
 \setlength\headheight{15pt}
 \fancyhead[L]{Terrence Ho}
-\fancyhead[R]{Experiment 4}
+\fancyhead[R]{Experiment 5}
 \fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
 %-------------------------------------------------------------------------------
 % TITLE PAGE
@@ -61,8 +61,10 @@
         Date of Lab: May 16th, 2017 \\
         Lab Section: Tuesday, 5 P.M.\\
         T.A.: David Bauer\\
-        Lab Partners: Robathan Harries}
-
+        Lab Partners: Robathan Harries \\
+        Abstract: 165 words\\
+        Report: 2189 words\\
+    }
 \maketitle
 \tableofcontents
 \newpage
@@ -78,26 +80,30 @@
 \addcontentsline{toc}{section}{Abstract}
 \begin{center}
 \title{
-    \Large \textbf{\uppercase{Investigating Damped and Undamped Oscillations}}
+    \Large \textbf{\uppercase{Investigating Resonant Frequency in Damped and Undamped Oscillations}}
 }
 
 T. Ho\footnote{Henry Samueli School of Engineering and Applied Science,
 University of California, Los Angeles}
 \end{center}
 
-In Newtonian mechanics, a mass suspended on a spring undergoes harmonic motions.
+In Newtonian mechanics, a mass suspended on a spring will undergo harmonic
+motion if acted by an outside force.
 The objective of the experiment was to investigate the motion of damped and
 undamped oscillations. Specifically, we wanted to find whether
-resonant frequencies in both types of oscillations would be equivalent, as well
-as any other observations we could make.  A mass
-was hung from a vertical force sensor, and measured both voltage and time, with
-magnets providing a damping force. Graphs of voltage vs time were plotted to
-find the relationship between these values. Through this, we confirmed the 
-experimental resonant frequency closely matched calculated predicted values, which was
-0.6799 1/s. We observed the amplitude of an undamped oscillation being near
-constant, while an undamped oscillation's amplitude decreased very quickly.
-Lastly, values of damping term and Q-factor were also derived from the
-experiment. 
+resonant frequencies in both types of oscillations would be equivalent.
+A mass was hung from a spring attached to a vertical force sensor, which 
+measured both voltage and time. Magnets provided a damping force when passed
+through a metal tube. Graphs of voltage vs time were plotted to
+find the relationship between these values. Based on the resonant frequency 
+of the undamped oscillation found
+from our data, we calculated a value of the damped resonant frequency and
+comapred it to the measured value of damped resonant frequency.  Through this, 
+we confirmed the 
+experimental resonant frequency matched calculated predicted values, which was
+0.67 $\pm$ 0.02 Hz. We found that
+the resonant frequency for undamped oscillations and damped oscillations (both
+measured and calculated) are the exact same.  
 
 \newpage
 \begin{figure}[h!]
@@ -121,13 +127,20 @@ is in simple harmonic motion and has a constant amplitude and frequency.  This
 frequency is also known as the resonant frequency, where it's amplitude will be
 greatest.  
 
+Damped oscialltions are oscillations that are affected by an outside force that
+causes the amplitudes of its oscillation to decrease exponentially.  This is
+known as the damping term.  Damping time is the time it takes for a damping
+force to decay the amplitude by a factor of \(\frac{1}{e}\).  Damped
+oscillations are affected by something called the Q-factor, which describes how
+energy is lost in a resonant element which in our experiment is the mass and
+spring.  These terms can all be used to find the resonant frequency of a damped
+oscillation, which we will see later.  
+
 In our experiment, we sought to observe both undamped and damped oscillations,
 with the ultimate goal of finding the resonant frequency.  By hanging a mass
 onto a force sensor and measuring voltage produced by the mass over time,
-we can determine the amplitudes, frequencies, and periods by which the mass on
-the spring oscillated at.  We can also determine if the resonant frequency is
-the same for both undamped and damped oscillations.   
-
+we were able to measure the resonant frequency produced by undamped and damped
+oscillations, and compare these values.
 
 \section*{Methods}
 \addcontentsline{toc}{section}{Methods}
@@ -141,13 +154,14 @@ The slope of the best fit line gives our spring constant \(k\) (\textbf{Figure
 
 \textbf{Figure 5.1} shows the layout of our experiment. 
 With the force sensor (measuring voltage) attached to the computer, set a high sample
-rate for the sensor so voltage data is accurate.  Attach a small string to the
+rate for the sensor so the voltage data is accurate.  Attach a small string to the
 bottom of the hook, then attach the mass to the string (this is done to avoid
 uncertainty that occurs when the spring rotates and turns as it stretches and
 compresses).  The mass should have magnets on it's side so an aluminnum tube can
-be used for the damped oscillation trial and slow the mass.  A small force was
+be used for the damped oscillation trial and slow the mass.  A small vertical force was
 given to the spring mass system and let to oscillate for 40 seconds, during
-which voltage and time are recorded.    
+which voltage and time are recorded. Do this twice, once without damping and
+once with damping through the aluminum tube.
 
 Any data recorded should be transferred over to Excel for analysis.  Other data
 important to collect would be an offset voltage(to account for the fact the
@@ -155,21 +169,55 @@ voltage data may not be centered at zero) and mass of the weight used.
 
 \section*{Analysis}
 \addcontentsline{toc}{section}{Analysis}
+
+\subsection*{Derivations}
+\addcontentsline{toc}{subsection}{Derivations}
+We mentioned terms such as damping term, resonant frequency, damping time, and
+Q-factor before, now we shall see how these terms are related.
+
+The equation \[m\ddot{x} = -kx - b\dot{x}\] is the differential equation that
+represents damped motion.  One solution to this differential equation is \[x(t)
+    = Ae^{iwt}\]  By substituting this into the first equation we get
+    \[-w^2mAe^{iwt} = -kAe^{iwt} - iwbAe^{iwt}\] which can simplify to \[mw^2 =
+        k + iwb\] By solving this quadratic equation, we find that \[w =
+    \frac{ib}{2m} \pm \sqrt{\frac{k}{m} - \frac{b^2}{4m^2}}\]  If we
+    substitute what we just found into the solution to the differential equation
+    stated previously, we find that \[x(t) = Ae^{i\bigg( \frac{ib}{2m} +
+        \sqrt{\frac{k}{m} - \frac{b^2}{4m^2}}  \bigg)t}\] \[x(t) =
+    Ae^{i\sqrt{\frac{k}{m} - \frac{b^2}{4m^2}}t} \times e^{-bt}{2m}\]
+As stated previously, damping time $\tau$ is defined to be the time is takes for
+a damped oscillation to decay by a factor of \(\frac{1}{e}\).  Damping time is
+usually defined as \[\tau = \frac{2m}{b}\]
+The frequency of damped oscillations can be found by dividing the angular
+frequency by 2$\pi$, or \[f_{damped} = \frac{w_{damped}}{2\pi} \equiv
+    \frac{1}{2\pi}\sqrt{\frac{k}{m} - \frac{b^2}{4m^2}} = f_0\sqrt{1 -
+    \frac{b^2}{4m^2}}\]  By definition, we also know that \[f_{damped} \equiv
+f_0\sqrt{1 - \frac{1}{4Q^2}}\]  By setting these two equations equal to one
+another, we find \[ \sqrt{1 - \frac{1}{4Q^2}} = \sqrt{1 - \frac{b^2}{4km}}\]
+We solve and simpilfy for Q to get \[Q = \frac{\sqrt{km}}{b}\] 
+Thus, Q can be found if we know the mass, the spring constant, and the damping
+term.  We can find the damping term \(b\) by first knowing the damping time
+$\tau$ and dividing twice the mass by \(b\).
+
+\subsection*{Plots and Graphs}
+\addcontentsline{toc}{subsection}{Plots and Graphs}
+
 We first determined the spring constant of the spring by hanging masses of 0 g, 50 g,
 100 g, 150 g, and 200 g, and plotting these masses against the distance
-remaining from the ground to the spring when placed onto the spring.  This is
+remaining from the ground to the spring when placed onto the spring (the
+uncertainty of the masses was 0.0005 kg, half the lowest precision of our scale).  This is
 illustrated in \textbf{Figure 5.2}.  The spring constant is determined to be
 3.2 $\pm$ 0.2 N/m.
 
-The mass m on the spring we used for our experiment was 175 $\pm$ 0.5 g.  
+The mass \(m\) on the spring we used for our experiment was 175 $\pm$ 0.5 g.  
 
-To predict out resonant frequency, we used the equation \(f_0 =
+To predict our resonant frequency, we used the equation \(f_0 =
 \frac{1}{2\pi}\sqrt{\frac{k}{m}}\), where \(k\) is the spring constant found on
 \textbf{Figure 5.2} and \(m\) is the mass of the weight on spring.  Using the
-propagation of uncertainty, \(\frac{\delta f_0}{f_0} =
+propagation of uncertainty, \(\frac{\delta f_0}{f_{0, best}} =
 \sqrt{\bigg(\frac{\delta k}{2k} \bigg)^2 + \bigg(\frac{\delta m}{2m} \bigg)^2}
 \), to find the uncertainty for \(f_0\), we find that \(f_{0, predict} = 0.67
-\pm 0.2\) Hz. 
+\pm 0.02\) Hz. 
 
 
 
@@ -178,8 +226,8 @@ propagation of uncertainty, \(\frac{\delta f_0}{f_0} =
     \captionsetup{labelformat=empty}
     \caption{\textbf{Figure 5.2 Measuring Spring Constant of a Spring.}  Masses
     used were 0 g, 50 g, 100 g, 150 g, and 200 g.  The best fit line has the
-equation \(F = -3.1945x + 2.9174\) The spring constant was found to be \(3.2 \pm
-0.2\).}
+    equation \(F = (-3.2 \pm 0.2)x + (2.9 \pm 0.1)\) The spring constant was found to be \(3.2 \pm
+0.2\) N/m.}
 \addcontentsline{toc}{subsection}{Figure 5.2}
 \end{figure}
 
@@ -189,7 +237,7 @@ equation \(F = -3.1945x + 2.9174\) The spring constant was found to be \(3.2 \pm
     \caption{\textbf{Figure 5.3 Simple Harmonic Motion of Spring.} The x-axis
     shows time of reading and the y-axis shows the voltage measured by the force
 sensor at that time. An offset of 0.0327 V was added to each voltage to center
-our readings at V = 0.}
+our readings at V = 0. The \(f_0\) found from this figure is 0.661 $\pm$ 0.002 Hz.}
 \addcontentsline{toc}{subsection}{Figure 5.3}
 \end{figure}
 
@@ -202,27 +250,28 @@ was not 0 V and to avoid drifting in our data for the damping oscillation in
 \textbf{Figure 5.3} shows our plotted values of voltage \(V\) at time \(t\) for
 the undamped oscillation. We derived our experimental value of $f_{0, undamped}$ by taking the
 maxima at several different points, zooming in and finding the maximum value and
-time of each peak.  The resonant frequency $f_{0, undamped}$ is then equal to \(\frac{n -
+time of each peak.  The undamped resonant frequency $f_{0}$ is then equal to \(\frac{n -
 1}{t_n - t_1}\), where \(n\) is the peak number and \(t\) is the time when that
 peak occured. We took several trials of this data to find an uncertainty range
 (standard deviation of the data divided by the number of trials),
-and the resulting frequency was \(f_{0, undamped} = 0.661 \pm 0.002\) Hz.  
+and the resulting frequency was \(f_{0} = 0.661 \pm 0.002\) Hz.  
 
 Similarly, we plotted the measured voltage values at each time for the damped
 oscillation in \textbf{Figure 5.4}. We derived our experimental value of
 $f_{damped}$ by taking the
 maxima at several different points, zooming in and finding the maximum value and
-time of each peak.  The resonant frequency is then equal to \(\frac{n -
+time of each peak.  The damped resonant frequency is then equal to \(\frac{n -
 1}{t_n - t_1}\), where \(n\) is the peak number and \(t\) is the time when that
 peak occured. We took several trials of this data to find an uncertainty range
 (standard deviation of the data divided by the number of trials),
 and the resulting frequency was \(f_{damped} = 0.660 \pm 0.003\) Hz.  
 
 We can see that in both the damped and undamped oscillations, the resonant
-frequencies \(f_0\) calculated from our experiment were within the uncertainty
+frequencies \(f_0\) and \(f_{damped}\) calculated from our experiment were within the uncertainty
 range of our predicted resonant frequency \(f_{0, predict}\), which was 0.67
 $\pm$ 0.02 Hz.  Thus our calculated values are accurate relative to our
-predicted value.
+predicted value and resonant frequencies in undamped and damped oscillations are
+the same.
 
 
 
@@ -232,28 +281,100 @@ predicted value.
     \caption{\textbf{Figure 5.4 Damped Oscillation of a Spring.}  The x-axis
     shows the time of reading and the y-axis shows the voltage measured by the
 force sensor at that time.  The offset was 0.0327 V, which was added to each
-voltage value to center our readings.}
+voltage value to center our readings. The \(f_0\) value derived from this graph
+is 0.660 $\pm$ 0.003 Hz.}
 \addcontentsline{toc}{subsection}{Figure 5.4}
 \end{figure}
 
-We can also determine damping time from our graph.  Damping time is 
+We can also determine damping time from \textbf{Figure 5.4}.  Damping time is the time for
+the damped osciallation's amplitude to decrease by \(\frac{1}{e}\), which will
+only decay exponentially if damping is caused by a velocity-dependent force, and
+not by a friction force.  After ensuring our voltage-time plot in \textbf{Figure
+5.4} is centered around V = 0, we took the peak voltages for several extrenum,
+and calculated the ratio of peak voltages from one peak to the next.  The ratio
+between amplitudes was plotted in \textbf{Figure 5.5}, which we can see ranges
+from 0.81 to 0.86.  The ratio values shown in \textbf{Figure 5.5} do not 
+indicate any upward or downward trend, which means we have chosen a correct
+value for the voltage offset.  By setting a correct offset value, we have
+avoided a drift in our voltage data and now our future measurements not be
+affected by the fact that the equilibrium voltage was not centered at 0 V.
+
 
 \begin{figure}
     \includegraphics[width=\linewidth]{Extrenum.png}
     \captionsetup{labelformat=empty}
-    \caption{\textbf{Figure 5.5 Ratios of Peak Amplitudes}}
+    \caption{\textbf{Figure 5.5 Ratios of Peak Amplitudes} Graph of ratios of
+    voltages from peaks of damped oscillations.  Ratios range from 0.81 to 0.86.}
     \addcontentsline{toc}{subsection}{Figure 5.5}
 \end{figure}
 
-TODO: Damping Time
-Deriving Equations for Q and damping time and b
-Fast Fourier Transform
+Each ratio measurement was converted to damping time $\tau$ with this equation:
+\(\tau = -\Bigg(\frac{T}{ln\bigg(\frac{V(t + T)}{V(t)}\bigg)}\Bigg)\).  We
+collected each damping time calculated for each ratio and averaged them to find
+the mean damping time, which was $\tau$ = 8.5 $\pm$ 0.3 s (uncertainties found by taking
+the standard deviation divided by number of ratios).  
+
+We can determine damping term \(b\) by dividing twice the mass by the mean
+damping time, or \(b = \frac{2 * m}{\tau}\).  With a mass of 0.175 kg and using
+the previously found mean damping time, we find that \(b = 0.04 \pm 0.03\) kg/s
+(uncertainties found by propagation of uncertainties).  
+
+Next, we can also determine something called the Q-factor from our damped
+oscillation, which indicates energy loss in a resonant element which in this
+experiment is the spring-mass system.  The equation for Q is 
+\(Q = \frac{\sqrt{k * m}}{b}\), so we can
+substitute our previously found value for \(b\), as well as the spring constant
+\(k\) and mass \(m\) to find \(Q\).  By doing this, we calculate that \(Q =
+18.2 \pm 0.8\).  
+
+Lastly, we can use the Q factor to see if our calculated value for
+\(f_{damped}\) matches the one we measured by sampling extrenum of
+\textbf{Figure 5.4}.  Using the equation \(f_{damped} = f_0 * \sqrt{1 -
+\frac{1}{4Q^2}}\), where \(f_0\) is the resonant frequency found by sampling
+peaks in \textbf{Figure 5.3} and Q is the Q-factor found previously.  We
+calculate that \(f_{damped} = 0.66 \pm 0.04\) Hz.  We find the measuring and
+calculating the value of \(f_{damped}\) results in the exact same values, as our
+measured value of \(f_{damped}\) falls within the uncertainty range of the
+\(f_{damped}\) value we just calculated.
+
+As a bonus, we tried to find the resonant frequency by doing a Fast Fourier
+Transformation(FFT) on our damped oscillation data. By taking the width of the
+peak at \(\frac{1}{\sqrt{2}}\) of the height of the maximum value, we can
+determine the width of the change of resonance \(\Delta f\).  The FFT's peak was
+0.025 Hz wide.  Because Q is large, Q can be found as the ratio of resonance
+frequency to resonance width, or \(Q = \frac{f_0}{\Delta f}\). The base of the
+FFT determines the resonant frequency of the oscillations, which was at 0.6468
+Hz.  Using the previously defined formula, \(Q = 25.872\).  
+The value of Q calculated from our FFT is higher by 7.7 than the value of Q
+derived from our calculations of the damped oscillation. 
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
 We performed our experiment to study simple harmonic motion and damped
-oscillations.  
-TODO: Finish
+oscillations.  We wanted to verify if resonant frequency in both damped and
+undamped oscialltions would be the same.  
+Our predicted value of the resonant frequency was 0.67 $\pm$ 0.02 Hz.  
+The resonant frequency from the undamped oscillation was 0.661 $\pm$ 0.002.  Our
+measured value of \(f_{damped}\) from \textbf{Figure 5.4} was 0.660 $\pm$ 0.003
+Hz.  The calculated value of \(f_{damped}\) was 0.66 $\pm$ 0.04 Hz.  All values of
+the resonant frequency from both undamped and damped oscillations fell inside
+the uncertainty range of the predicted \(f_0\).  We verified that the measured
+and caluclated value of \(f_{damped}\) were the same.  Our experiment verifies
+that the resonant frequency was the same regardless of damping and that multiple
+ways of calculating the resonant frequency results in the same \(f_0\).
+
+We note that although the our values of \(f_0\) fell within our predicted
+frequency's uncertainty range our experimental values were lower than the
+predicted value.  As such, we can attribute some external factors such as
+friction to a loss of energy that makes our experimental values slightly lower
+than the predicted value, which could slow the oscillations and lower the
+frequency.  Another source of error could stem from the uncertainty value
+of our spring constant was to the first decimal place, which gives a wide range
+of possible error.  This wide range could have attributed to the slightly lesser
+experimental values of \(f_0\) if the spring constant was actually lower than
+\(k_{best}\) for our experimental trials.  This is a source of systematic error
+that could be avoided by measuring the spring constant to a higher degree of
+precision.
 
 
 \newpage
