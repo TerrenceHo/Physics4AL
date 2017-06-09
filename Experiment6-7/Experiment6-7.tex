@@ -564,12 +564,23 @@ clamp.  \textbf{Table 6.4} shows these amplitudes.
 \captionof*{table}{\textbf{Table 6.4} Drive Frequency Ampltidues for bounded and
 unbounded string vibrations.}
 
+\setlength{\parindent}{5ex}
 For the frequencies at $n=2$ and $n=4$, when bounded the amplitudes of
 oscillation decreased, but were still within the bounds of uncertainty.  This is
 to be expected, as placing a boundary condition on a node should not affect the
 standing waves.  However, at $n=5$, there is almost no oscillation amplitude,
 because the boundary condition is placed right on top of a node, which almost
 cancels out the oscillations.
+
+As an aside, we decided to see what the greatest mode of standing waves we could
+find.  The theoretical max number of nodes that could be present on our
+stretched string would be 80 nodes, which found by taking the length of string
+from the pulley to the sensor, which was 0.02 m, and dividing that by the length
+of the total horizontal string.  At n = 80, there will be a node directly
+underneath the photodiode laser, which will make it impossible to measure
+oscillations of a standing wave, because a node has no displacement.  The
+greatest node we could find in our experiment was n = 20 however.  Beyond n =
+20, the standing waves became too small to detect. 
 
 \section*{Conclusion}
 \addcontentsline{toc}{section}{Conclusion}
@@ -581,17 +592,47 @@ were spaced 15 $\pm$ 0.5 mm apart, we achieved critical damping, which is the po
 the pendulum comes to rest at the equilibrium state fastest.  
 
 Using the same physical pendulum, we studied driven oscillations to measure the
-driving resonant frequency, which was determined to be 0.714 $\pm$ 0.005 Hz.  We
-also found the Q-factor of our driven harmonic oscillation, by first measuring
-the damping time of the system
+driving resonant frequency, which was determined to be 0.714 $\pm$ 0.005 Hz.  At
+this frequency, we
+determined the Q-factor a driven oscillation at this frequency in two ways;
+first by measuring the amplitude values of various frequencies at and close to the
+driving frequency, and also by plotting Lissajous Figures and measuring the
+amplitude of the plots.  The two values of Q obtained through these methods were
+completely outside their respective uncertainty boundaries, which we can
+attribute to systematic uncertainty due to the wave driver (when creating
+Lissajous Figures at the same frequency, the amplitude would differ between
+trials, thus causing systematic uncertainty in the experiment).  Thus the first
+method of finding the Q-factor by taking measurements of many amplitudes at many
+frequencies is most accurate, because it helps eliminate systematic uncertainty,
+and so is more precise. The Q-factor was determined to be 3.76 $\pm$ 0.06.
 
-Potential Errors in experiment
+For waves on a vibrating string, we found the wave speed caused by hanging three
+different masses (0.202 $\pm$ 0.0005 kg, 0.303 $\pm$ 0.0005 kg, and 0.403 $\pm$
+0.0005 kg) from the end of the string.  The measured velocities were 17.0 $\pm$
+0.5 m/s, 20.8 $\pm$ 0.7 m/s, and 24.1 $\pm$ 0.9 m/s.  All of the measured
+velocities are within the calculated velocity's uncertainty range, which
+indicates our measured velocities are precise.  
 
-Wave Velocities...
+With the same vibrating string, we also found the fundamental frequency by
+tuning the drive frequency until we produced a Lissajous Figure that was
+symmetric, which turned out to be 7.92 $\pm$ .01 Hz.  Having found these values,
+we found the harmonic frequencies for modes \(n = \) 3, 5, 7, and 9.  The
+measured frequencies were within the uncertainty range of the calculated
+frequencies (which should be the nth multiple of the fundamental frequency).  
 
-Wave Nodes...
+We also investigated boundary conditions of standing waves, at wave numbers of
+\(n = \) 2, 4, and 5.  At \(n =\)2 and 4 we noticed that the amplitude of string
+oscillations decreased slightly with a constraint but still maintained a
+sinusoidal motion.  This is because the boundary condition was placed right at
+a node in the standing waves, of which there should be no displacement already
+anyway. In contrast, at \(n = \)5 the boundary condition was placed right on top
+of an oscillating wave, and so the constraint cancelled out the wave and reduced
+the oscillation amplitude to almost zero.  Because the constraints we used were
+blocked more than a single finite point on the string, a small part of the
+oscillating string was caught by the constraint for trials at \(n =\)2 and 4,
+which explains the slightly lower oscillation amplitudes compared to their
+unbounded oscillations.
 
-Potential Errors in string experiment.
 
 
 \section*{References}
